@@ -60,7 +60,7 @@ int main()
     double p0;              // Initial equivalents of acidic protons in solvent (relative to substrate)
     int N;                  // Equivalents of exchangeable substrate hydrogens (relative to substrate)
     double xu = 1;          // Fraction of unracemised substrate molecules
-    long steps;             // Number of time steps
+    long steps = 1000;             // Number of time steps
     double k = 0.04;        // Rate constant (arbitrary units - choose so that the entire reaction is effectively covered)
     double ee0 = 100;       // Initial enantiomeric excess
 
@@ -79,12 +79,8 @@ int main()
     cin >> d0;
     cout << "\nSolvent protons (equiv):";
     cin >> p0;
-    cout << "\nRate constant:";
-    cin >> k;
     cout << "\nInitial enantiomeric excess (%):";
     cin >> ee0;
-    cout << "\nNumber of time steps:";
-    cin >> steps;
 
     // Open output file
 
