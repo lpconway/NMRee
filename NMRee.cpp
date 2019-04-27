@@ -58,7 +58,7 @@ int main()
     double dx[100]={};      // Rate of change of fractions x
     double d0;              // Initial equivalents of acidic deuterons in solvent (relative to substrate)
     double p0;              // Initial equivalents of acidic protons in solvent (relative to substrate)
-    int N;                  // Equivalents of enolisable substrate hydrogens (relative to substrate)
+    int N;                  // Equivalents of exchangeable substrate hydrogens (relative to substrate)
     double xu = 1;          // Fraction of unracemised substrate molecules
     long steps;             // Number of time steps
     double k = 0.04;        // Rate constant (arbitrary units - choose so that the entire reaction is effectively covered)
@@ -73,7 +73,7 @@ int main()
 
     // Take inputs for variables
 
-    cout << "Enolisable hydrogens (equiv):";
+    cout << "Exchangeable hydrogens (equiv):";
     cin >> N;
     cout << "\nSolvent deuterons (equiv):";
     cin >> d0;
